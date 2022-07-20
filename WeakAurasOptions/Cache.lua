@@ -32,7 +32,7 @@ function spellCache.Build()
     local id = 0
     local misses = 0
 
-    while misses < 53000 do
+    while misses < 53000 and id < 79581 do -- @HelloKitty: Above this ID crashes the client currently for some reason
       id = id + 1
       local name, _, icon = GetSpellInfo(id)
 
